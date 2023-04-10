@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Contacts</title>
+	<link rel="stylesheet" type="css" href="styles.css">
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -109,10 +110,9 @@
         line-height: 1.5em;
         margin: 20px;
       }
-      
-      
+
       .contact-info {
-			display: flex;
+			display: block;
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
@@ -126,13 +126,17 @@
 		}
 
 		.contact-info a {
-			display: flex;
+			display: block;
 			align-items: center;
 			text-decoration: none;
 			color: #333;
 			margin-right: 40px;
 			transition: transform 0.4s;
 		}
+        .contact-info a {
+		  display: block;
+ 		  margin-bottom: 20px;
+	}
 
 		.contact-info a:hover {
 			transform: scale(1.1);
@@ -155,7 +159,6 @@
 			color: #d9534f;
 		}
       
-     
       footer {
         position: fixed;
         left: 0;
@@ -167,6 +170,9 @@
         bottom: 0;
         width: 100%;
         text-align: center;
+		border: 1px solid #ddd;
+			border-radius: 7px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
       }
 
     </style>
