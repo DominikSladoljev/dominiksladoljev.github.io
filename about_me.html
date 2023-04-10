@@ -17,13 +17,18 @@
 			background-color: #f7f7f7;
       }
       
+
      
       header {
         background-color: #1c526b;
         color: white;
-        padding: 20px;
+        padding: 25px;
       }
+     
+		
       
+    
+		
       
       .image {
 			float: left;
@@ -31,6 +36,7 @@
 			border-radius: 50%;
 		}
       
+
       
     nav {
 			background-color: #eee;
@@ -42,7 +48,7 @@
 			display: block;
 			color: #1c526b;
 			text-align: left;
-			padding: 10px;
+			padding: 15px;
 			text-decoration: none;
 			float: left;
 		}
@@ -50,15 +56,27 @@
 			background-color: #1c526b;
 			color: #fff;
 		}
+        nav a:hover {
+            transform: scale(1.3);
+            }
+        nav a {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: #333;
+			margin-right: 40px;
+			transition: transform 0.5s;
+		}
+		
     .container {
 			margin: auto;
-			padding: 20px;
+			padding: 0px;
 			max-width: 800px;
     }
 
       h1 { 
 			font-size: 48px; 
-			margin-bottom: 0;
+			margin-bottom: 100;
 		}
 		
 		h2 {
@@ -93,23 +111,28 @@
   
   <body>
     <header class="left-align">
-      <img src="https://lh3.googleusercontent.com/hAuQEYYXv_jnaWIlIm6xvIjcCLIGwKO5CZvBqQCdzeCmjlwzsX5u59dJ5x_qG9gUysLDJzW5SPo598cUfVUf-H7NjEfjRLqshlwt21D_L6dcjN426-p9n8pmFA3tN0a2-b7cmQmp5w=w2400" alt="My Profile Image">
+      <img class="image" src="https://lh3.googleusercontent.com/hAuQEYYXv_jnaWIlIm6xvIjcCLIGwKO5CZvBqQCdzeCmjlwzsX5u59dJ5x_qG9gUysLDJzW5SPo598cUfVUf-H7NjEfjRLqshlwt21D_L6dcjN426-p9n8pmFA3tN0a2-b7cmQmp5w=w2400" alt="My Profile Picture">
       <h1>Dominik Sladoljev</h1>
       <h2>Quality Assurance Engineer</h2>
     </header>
 
     <nav>
-      <a href="index.html">Home Page</a>
+      <a href="index.html">Short Introduction</a>
       <a href="contacts.html">Contacts</a>
       
     </nav>
     
-  
+  <div class="container">
+
+		<header style="text-align:justify;">
+            <h1>About Me</h1>
+        </header>
 
     <p style="text-align:justify;">Hello, My name is Dominik Sladoljev and this is my story.</p>
        <br>
        <br>
-        <br>
+         <p style="text-align:justify;">My name is Dominik Sladoljev.</p>
+         <p style="text-align:justify;">I am originally from Vodice, and I currently work as an assistant shift manager at the municipal company Leć d.o.o. I'm rational, analytical and driven, I'm passionate about the profession change.</p>
         <p style="text-align:justify;">In the past year, I have been actively working toward changing my profession to quality assurance engineer. I completed “The Complete 2023 Software Testing Bootcamp” on the Udemy site.</p>
         <p style="text-align:justify;">By learning JMeter, Postman, and Zephyr Scale, I gained proficient skills in API testing and performance testing, including writing test scenarios and test cases.  
        I also gained an understanding of using SQL databases and reading the code of a page or application, and I'm very interested in learning automation. I know project management processes and methodologies and industry-standard tools such as Jira, Confluence, and Trello. I’m also fluent in English.
@@ -123,6 +146,7 @@ I am eager to change my profession and believe I have at least the basic knowled
 <br>
 <br>
 <br>
+	</div>
     
   </body>
   <footer>
